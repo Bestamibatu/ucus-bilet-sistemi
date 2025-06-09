@@ -1,0 +1,42 @@
+<div class="login-container">
+  <div class="login-card shadow">
+    <img src="https://cdn-icons-png.flaticon.com/512/69/69956.png" alt="Uçak" class="plane-icon" />
+
+    <h2>Giriş Yap</h2>
+
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="E-posta"
+          [(ngModel)]="email"
+          name="email"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Şifre"
+          [(ngModel)]="password"
+          name="password"
+          required
+          class="form-control"
+        />
+      </div>
+
+      <button type="submit" [disabled]="!loginForm.valid" class="login-button">
+        Giriş Yap
+      </button>
+
+      <p class="register-link">
+        Hesabınız yok mu?
+        <a routerLink="/register">Kayıt Ol</a>
+      </p>
+
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+    </form>
+  </div>
+</div>

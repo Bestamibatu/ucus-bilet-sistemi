@@ -1,0 +1,95 @@
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Modern gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+}
+
+/* Login Card */
+.login-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px; /* Rounded corners for card */
+  max-width: 400px;
+  width: 90%; /* Ensures responsiveness */
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Plane Icon */
+.plane-icon {
+  width: 80px; /* Adjusted the size of the plane icon */
+  margin-bottom: 20px; /* Adds space between the icon and the title */
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #333; /* Dark color for title */
+  font-size: 24px; /* Slightly larger font size for the heading */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 12px; /* Rounded corners for inputs */
+  transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff; /* Focus color for inputs */
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Primary blue color */
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 12px; /* Rounded corners for button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666; /* Slightly muted color for the register link */
+}
+
+.register-link a {
+  color: #007bff; /* Matching blue for the link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Error Message */
+.error-message {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}

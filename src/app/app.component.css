@@ -1,0 +1,33 @@
+/* Navbar için stil, görsel eklenmiş */
+.navbar {
+  background-image: url('src/assets/images/images1.jpeg'); /* Arka plan görselinin yolu */
+  background-size: cover; /* Görselin menüyü kaplamasını sağlar */
+  background-position: center; /* Görselin ortalanması */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  background-repeat: no-repeat; /* Görselin tekrarlanmaması için */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Hafif bir gölge efekti */
+}
+
+/* Navbar'daki bağlantılar için stil */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Geçiş efekti eklenmiş */
+}
+
+/* Hover durumu için stil */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Hover olduğunda daha açık bir renk */
+}
+
+/* Sayfa içeriği için stil */
+router-outlet {
+  padding: 20px;
+}

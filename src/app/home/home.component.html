@@ -1,0 +1,21 @@
+<!-- src/app/home/home.component.html -->
+<h2>Uçuş Listesi</h2>
+
+<div *ngIf="isLoading">Yükleniyor...</div>
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+<table *ngIf="flights.length > 0">
+  <thead>
+    <tr><th>Kalkış</th><th>Varış</th><th>Tarih</th><th>Fiyat (₺)</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let f of flights">
+      <td>{{ f.departure }}</td>
+      <td>{{ f.arrival }}</td>
+      <td>{{ f.date | date:'short' }}</td>
+      <td>{{ f.price }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="!isLoading && flights.length === 0">Hiç uçuş bulunamadı.</p>

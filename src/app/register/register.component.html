@@ -1,0 +1,57 @@
+<div class="register-container">
+  <div class="form-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/69/69956.png" alt="uçak" class="plane-image" />
+
+    <h2>Kayıt Ol</h2>
+
+    <form (ngSubmit)="onRegister()" #registerForm="ngForm" novalidate>
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Ad"
+          [(ngModel)]="name"
+          name="name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Soyad"
+          [(ngModel)]="surname"
+          name="surname"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="E-posta"
+          [(ngModel)]="email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Şifre"
+          [(ngModel)]="password"
+          name="password"
+          required
+        />
+      </div>
+
+      <button type="submit" [disabled]="!registerForm.form.valid">
+        Kayıt Ol
+      </button>
+
+      <p class="login-link">
+        Zaten hesabınız var mı? <a routerLink="/login">Giriş Yap</a>
+      </p>
+    </form>
+  </div>
+</div>
